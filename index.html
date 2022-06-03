@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=input, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <form onsubmit="print(); return false">
+        <label>Enter a Number: </label> <input required min="2" type="number" id="numInput">
+        <button type="submit">Submit</button>
+        </form>
+
+
+        <script>
+            function print(){
+            let numInput = document.querySelector("#numInput").value
+           for (let a=0; a<10;a++)
+           {
+               document.writeln(` ${numInput} X ${a+1} = ${numInput * (a+1)} </br>`);
+           }
+        }
+
+        </script>
+</body>
+</html>
